@@ -107,6 +107,7 @@ Client-side data fetching is useful when your page doesn't require SEO indexing,
 
 `Note: I haven't used it yet so cannot share a working example.`
 
+
 ## Code Demo
 
 
