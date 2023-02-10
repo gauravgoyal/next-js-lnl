@@ -40,7 +40,7 @@ With this approach, your application will send a request to server everytime it 
 Example: [Digital Polygon Blog](https://www.digitalpolygon.com/blog)
 
 
-## SSR: Static Site Generation
+## SSG: Static Site Generation
 With this approach, Next.js will render the page at build time.
 ```
   export async function getStaticProps(context) {
@@ -105,9 +105,7 @@ export async function getStaticProps() {
 ## Client Side Rendering
 Client-side data fetching is useful when your page doesn't require SEO indexing, when you don't need to pre-render your data, or when the content of your pages needs to update frequently. Unlike the server-side rendering APIs, you can use client-side data fetching at the component level.
 
-`
-Note: I haven't used it yet so cannot share a working example.
-`
+`Note: I haven't used it yet so cannot share a working example.`
 
 ## Code Demo
 
@@ -128,16 +126,16 @@ The router will automatically route files named index to the root of the directo
 ### Nested Routes
 The router supports nested files. If you create a nested folder structure, files will automatically be routed in the same way still.
 
-- pages/blog/first-post.js → /blog/first-post
-- pages/dashboard/settings/username.js → /dashboard/settings/username
+- pages/blog/first-post.js -> /blog/first-post
+- pages/dashboard/settings/username.js -> /dashboard/settings/username
 
 
 ### Dynamic Routs
 The router supports nested files. If you create a nested folder structure, files will automatically be routed in the same way still.
 
-- pages/blog/[slug].js → /blog/:slug (/blog/hello-world)
-- pages/[username]/settings.js → /:username/settings (/gaurav/settings)
-- Catch All Routes -> pages/post/[...all].js → /post/* (/post/2020/id/title)
+- pages/blog/[slug].js -> /blog/:slug (/blog/hello-world)
+- pages/[username]/settings.js -> /:username/settings (/gaurav/settings)
+- Catch All Routes -> pages/post/[...all].js -> /post/* (/post/2020/id/title)
 - Optional Catch All Routes -> pages/post/[[...slug]].js -> /post, /post/a, /post/a/b
 
 
